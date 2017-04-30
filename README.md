@@ -14,11 +14,11 @@ HBIndexMenu 仿制自 ***汽车报价大全*** 的索引目录。
 
 如果源代码和注释看不懂或者懒得看的，也可以听我多解释几句。
 
-##布局：
+## 布局：
+从左往右依次代表我代码中所说的三种情况：
 
 ![布局](http://upload-images.jianshu.io/upload_images/5476055-751f14b48902c7a3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/300)
 
-从左往右依次代表我代码中所说的三种情况：
 > 
 1. 算上默认间隙，高度也足够，目录整体居中。
 2. 默认间隙过大，适当的减小间隙，高度才足够。
@@ -29,6 +29,7 @@ HBIndexMenu 仿制自 ***汽车报价大全*** 的索引目录。
 
 ## 两个 *MaxOffsetX* 的关系：
 ![MaxOffsetX](http://upload-images.jianshu.io/upload_images/5476055-79112b92fe839eef.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/300)
+
 标题在首次赋值文本时，会缩小到刚好放下首字符的大小，且保持中心点不变。因此后续缩放过程中，X的最大偏移量将加上首次缩小的这段X的值。这么做只是为了后续缩放统一，自然。
 
 ## 摔过的坑：
