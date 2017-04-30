@@ -265,7 +265,8 @@ static CGFloat      const HBBoundary        = 1.0 - (1.0 / (HBPrepCount * 2.0));
              请注意，中间标题上下两端均有一部分与相邻标题重叠，而首尾标题则只有一方有重叠,
              故首尾标题独占面积比中间的标题略大，而相邻两个标题的分割线应与两标题的中心点距离相等。
              因此，此处计算Index的Y值偏差将不再等于 originPointY。
-             itemHeight - offsetPointY = 相邻两个标题中心点距离
+             itemHeight - offsetPointY = 相邻两个标题重叠部分的高度
+             为公平起见，首标题的起始有效计算坐标应减去重叠高度的一半。
              */
             calculatePointY = (itemHeight - offsetPointY) / 2.0;
         }
